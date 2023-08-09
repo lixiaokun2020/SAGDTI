@@ -41,7 +41,7 @@ data
 |   |-- proteins.txt
 |   |-- target-target_similarities_WS.txt
 |
-|-- micro attribute
+|-- KIBA
     |-- kiba_dti.csv  
     |-- ligands_iso.txt
     |-- proteins.txt
