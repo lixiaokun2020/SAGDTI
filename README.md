@@ -7,7 +7,7 @@ Accurate identification of target proteins that interact with drugs is a vital s
 </p>
 
 
-## The environment of MMA-DPI
+## The environment of SAGDTI
 ```
 python==3.7.12
 numpy==1.21.6
