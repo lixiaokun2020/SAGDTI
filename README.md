@@ -7,64 +7,6 @@ Accurate identification of target proteins that interact with drugs is a vital s
 </p>
 
 
-## The environment of SAGDTI
-```
-python==3.7.12
-numpy==1.21.6
-pandas==1.3.5
-torch==1.6.0
-tqdm==4.64.0
-scikit-learn==1.0.2
-torch_geometric==1.7.0
-scipy==1.7.3
-networkx==2.1
-dgl==0.4
-rdkit==2021.03.5
-Bio==1.5.3
-deepchem==2.7.1
-```
-
-## Dataset description
-In this paper, three datasets are used, i.e., BindingDB, Davis and KIBA. The directory structure are shown below:
-
-```txt
-data
-|-- BindingDB
-|   |-- BindingDB_Kd.txt
-|   |-- BindingDB_SMILES.txt
-|   |-- BindingDB_Target_Sequence.txt
-|
-|--Davis
-|   |-- davis_dti.csv
-|   |-- drug-drug_similarities_2D.txt
-|   |-- ligands_iso.txt
-|   |-- proteins.txt
-|   |-- target-target_similarities_WS.txt
-|
-|-- KIBA
-    |-- kiba_dti.csv  
-    |-- ligands_iso.txt
-    |-- proteins.txt
-```
-
-We also include the biological interactive information to train the GAT module, it contains graph, network and information.
-
-## Run the SAGDTI for DTI task
-By default, you can run our model using KIBA dataset with:
-```sh
-python main.py
-```
-
-Also run it using Davis dataset with:
-```sh
-python main.py --dataset ${'Davis'}
-```
-
-Or run it using BindingDB dataset with:
-```sh
-python main.py --dataset ${'BindingDB'}
-```
-
 
 # Acknowledgments
 The authors sincerely hope to recieve any suggestions from you!
